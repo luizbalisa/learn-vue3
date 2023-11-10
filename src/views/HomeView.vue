@@ -1,9 +1,10 @@
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
-</script>
+import Quiz from "@/components/Quiz/QuizMain.vue";
+import { state } from "@/stores/quizStore";
 
+</script>
 <template>
-  <main>
-    <TheWelcome />
+  <main class="grid grid-cols-1 gap-32">
+    <Quiz :quiz="state" />
   </main>
 </template>
